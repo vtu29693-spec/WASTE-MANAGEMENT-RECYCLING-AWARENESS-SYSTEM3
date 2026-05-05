@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-Analyzer: Plastic Detector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>♻️ Plastic Eco-Analyzer</h1>
+        <p>Upload a photo or take a picture to analyze the waste.</p>
+        
+        <label for="imageInput" class="upload-btn">📸 Choose Image or Open Camera</label>
+        <input type="file" id="imageInput" accept="image/*" capture="environment" hidden>
+        
+        <div id="previewContainer" class="hidden">
+            <img id="imagePreview" src="" alt="Image Preview">
+        </div>
+
+        <button id="analyzeBtn" class="hidden">Analyze Image</button>
+        <div id="loading" class="hidden">Analyzing with AI... Please wait.</div>
+
+        <div id="resultContainer" class="hidden">
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
